@@ -78,12 +78,17 @@ imperialConversion = {
 # Initialise our converted value
 ConvertedValue = 0
 
+# Converting between Farenheit and Celsius is different to the other
+# conversions so we treat it differently
 if sourceUnit in tempUnits:
     if sourceUnit == "F":
        ConvertedValue = (float(userString) - 32) / 1.8
     elif sourceUnit == "C":
         ConvertedValue = (float(userString) * 1.8) + 32
+
 elif sourceUnit in metricUnits:
+# We create a tuple from the source and target units to lookup the
+# conversion from our dictionary
      conv = metricConversion[(sourceUnit,targetUnit)]
      ConvertedValue = float(userString)
      ConvertedValue = conv * value
