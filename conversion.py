@@ -1,5 +1,16 @@
+# Conversion.py
+##################
+# Author: Joshua Chubb
+#
+# A simple script for converting between metric and imperial
+#
+##################
+
+# Output some usage stuff to the user
 print ("Usage: converts a value between Metric and Imperial units")
 
+# We can utilise """ """ to preserve line breaks in our strings,
+# alternatively we can utilise the character \n
 print("""Valid units:
         - Length:
           - Metric: cm, m, km
@@ -12,15 +23,18 @@ print("""Valid units:
           - Imperial: floz, qt
         - Temperature: F, C
       """)
-# grab a string with the units from the user
+
+# grab a string with the units from the user, store it in a string variable
 userString = input("Input a value: ")
 sourceUnit = input("Input your source unit: ")
 targetUnit = input("Input your target unit: ")
 
+# Initialise some lists to utilise for our checks
 metricUnits = [ "cm", "m", "km", "g", "kg", "ml", "l" ]
 imperialUnits = [ "inch", "ft", "mile", "oz", "lb", "floz", "qt" ]
 tempUnits = [ "C", "F" ]
 
+# Initialise two dictionaries that hold the values for conversion
 metricConversion = {
         ("cm","inch") : 0.393,
         ("m","inch") : 39.37,
@@ -61,20 +75,21 @@ imperialConversion = {
         ("qt","l") : 1.137
         }
 
-value = 0
+# Initialise our converted value
+ConvertedValue = 0
 
 if sourceUnit in tempUnits:
     if sourceUnit == "F":
-       value = (float(userString) - 32) / 1.8
+       ConvertedValue = (float(userString) - 32) / 1.8
     elif sourceUnit == "C":
-        value = (float(userString) * 1.8) + 32
+        ConvertedValue = (float(userString) * 1.8) + 32
 elif sourceUnit in metricUnits:
      conv = metricConversion[(sourceUnit,targetUnit)]
-     value = float(userString)
-     value = conv * value
+     ConvertedValue = float(userString)
+     ConvertedValue = conv * value
 else:
      conv = imperialConversion[(sourceUnit,targetUnit)]
-     value = float(userString)
-     value = conv * value
+     ConvertedValue = float(userString)
+     ConvertedValue = conv * value
 
 print("The conversion of {}{} into {} is {}{}".format(userString,sourceUnit,targetUnit,value,targetUnit))
