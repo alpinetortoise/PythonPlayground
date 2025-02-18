@@ -97,4 +97,6 @@ else:
      ConvertedValue = float(userString)
      ConvertedValue = conv * value
 
+# Utilising a format string we can insert our values into a string
+# without concatenation
 print("The conversion of {}{} into {} is {}{}".format(userString,sourceUnit,targetUnit,value,targetUnit))
