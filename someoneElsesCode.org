@@ -2,6 +2,7 @@
 :ID:       11a48f30-5b38-4866-a892-4e89d31df44a
 :END:
 #+title: Someone Else's Code
+#+author: Joshua Chubb
 * Situation
 Your boss emails you a file, a python script (pass_check.py) and wants you to work out what it does. The only information he was given is that it is a small script that does some "checking" on passwords, and that it might be useful for the team.
 * Code: pass_check.py

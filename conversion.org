@@ -2,6 +2,7 @@
 :ID:       cd44d783-e167-4dba-981a-b5b9c0585189
 :END:
 #+title: Conversion Script
+#+author: Joshua Chubb
 
 * Problem:
 Create a script that converts between metric and imperial
