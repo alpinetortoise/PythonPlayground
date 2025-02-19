@@ -69,7 +69,7 @@ to ~acceptable_password = True~
 The first of four checks that this script does, however the line
 ~acceptable_password = True~ is misplaced, since the strings we're feeding back
 to the user say that it is acceptable if it contains a number. We should modify
-the line to ~acceptable_password &= True~[fn:1] and move this line up into the ~if~ block, and add ~acceptable_password &= False~ we should also look at making sure all the subsequent blocks look the same.
+the line to ~acceptable_password &= True~ [fn:1] and move this line up into the ~if~ block, and add ~acceptable_password &= False~ we should also look at making sure all the subsequent blocks look the same.
 ** Second Block
 #+BEGIN_SRC python
   if len(password_input) < 8:
