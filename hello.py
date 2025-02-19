@@ -1,17 +1,14 @@
-print("Hello, I like neovim!")
+# Hello.py
+# ========
+#
+# by Joshua Chubb
+#
+# A simple starter program with both print output and input
 
-num = 0
+print("Hello, World!")
 
-for i in range (0, 10):
-    num = num + 2
-    print ("the {}th product of 2 is {}".format(i, num))
+# store user input into the variable username to use later
+username = input("What is your name?")
 
-print(int (float("201") == 201))
-
-myList = [1,5,24,9,31]
-minNum = myList[0]
-for number in myList:
-    if number < minNum:
-        minNum = number
-
-print ("The smallest number in the list was: {}".format(minNum))
+# print a concatenated string of "Hello, " and the user input from above.
+print("Hello, " + username)
