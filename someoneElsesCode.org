@@ -168,5 +168,7 @@ Taking all our recommendations from above we can rewrite the script like so:
 * Footnotes
 
 [fn:1] In ~acceptable_password &= True~ the ~&=~ operator will and the current value of ~acceptable_password~ with ~True~ and set it to ~acceptable_password~ This is why we set ~acceptable_password~ to ~True~ in the initialisation.
+
 [fn:2] https://docs.python.org/3/library/functions.html#any
+
 [fn:3] https://docs.python.org/3/library/re.html
