@@ -1,7 +1,7 @@
 :PROPERTIES:
-:ID:       6634ecab-1617-421b-9308-5b2fb6f9834c
+:ID:       f25717d6-7aca-4114-bd95-bd8c9a06e288
 :END:
-#+title: Python
+#+title: Python Tutorial
           #+created: [2024-08-05 Mon 15:24]
           #+last_modified: [2024-08-05 Mon 15:24]
 * Meta
